@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       
+        <android.support.v4.widget.SwipeRefreshLayout
+    	android:id="@+id/swipe_container"
+   		android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+       <com.kd.filmstrip.customviews.HeaderAndFooterGridView
+            android:scrollbars="none"
+            android:id="@+id/gridView"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="?attr/actionBarSize"
+            android:columnWidth="@dimen/item_width"
+            android:numColumns="auto_fit"
+            android:horizontalSpacing="4dp"
+            android:stretchMode="columnWidth"
+            android:drawSelectorOnTop="true"
+            android:listSelector="?selectableItemBackground"/>
+       </android.support.v4.widget.SwipeRefreshLayout>
+                   <ImageButton
+        android:id="@+id/fab"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="@dimen/fab_size"
+        android:layout_height="@dimen/fab_size"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ripple"
+        android:stateListAnimator="@anim/anim"
+        android:src="@drawable/ic_capture"
+        android:elevation="4dp"></ImageButton>
+</RelativeLayout>

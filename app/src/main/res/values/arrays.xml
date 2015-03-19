@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="drawer_items">
+    <item name="ig_feed">News Feed</item>
+    <item name="ig_news">News</item>
+    <item name="ig_pop">Popular</item>
+    <item name="ig_explore">Photos Nearby</item>
+    <item name="ig_likes">Posts You\'ve Liked</item>
+    <item name="ig_settings">Settings</item>
+    <item name="app_about">About</item>
+    <item name="ig_logout">Logout</item>
+</string-array>
+<string-array name="drawer_icons">
+    <item name="ic_feed">@drawable/ic_feed</item>
+    <item name="ic_news">@drawable/ic_news</item>
+    <item name="ic_popular">@drawable/ic_popular</item>
+    <item name="ic_nearby">@drawable/ic_nearby</item>
+    <item name="ic_likedpics">@drawable/ic_likedpics</item>
+</string-array>
+<string-array name="comments_dialog">
+    <item name="comment_copy">Copy Text</item>
+    <item name="comment_reply">Reply</item>
+</string-array>
+
+<!--  Captions Positions -->
+<string-array name="captionPosition">
+    <item>Above Photo</item>
+    <item>Below Photo</item>
+</string-array>
+
+<!--  Captions Positions Values-->
+<string-array name="captionPositionValues">
+    <item>above</item>
+    <item>below</item>
+</string-array>
+
+<!--  Time Style -->
+<string-array name="timeStyle">
+    <item>Full Date</item>
+    <item>Relative Timing</item>
+</string-array>
+
+<!--  Captions Positions Values-->
+<string-array name="timeStyleValues">
+    <item>false</item>
+    <item>true</item>
+</string-array>
+
+<!--  Like Photos View Style -->
+<string-array name="lPStyle">
+    <item>Grid</item>
+    <item>List</item>
+</string-array>
+
+<!--  Captions Positions Values-->
+<string-array name="lPStyleValues">
+    <item>grid</item>
+    <item>list</item>
+</string-array>
+
+<!--  Theme Color Names  -->
+<string-array name="themeColors">
+    <item>Filmstrip Blue</item>
+    <item>Red</item>
+    <item>Orange</item>
+    <item>Yellow</item>
+    <item>Blue</item>
+    <item>Green</item>
+    <item>Brown</item>
+    <item>Black</item>
+    <item>Purple</item>
+    <item>Pink</item>
+</string-array>
+
+<!--  Theme Color Values -->
+<string-array name="themeColorsValues">
+    <item>0</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+</string-array>
+
+<string-array name="themeColorsPrimary">
+    <item>#2d5c80</item>
+    <item>#F44336</item>
+    <item>#FF9800</item>
+    <item>#FFEB3B</item>
+    <item>#2196F3</item>
+    <item>#4CAF50</item>
+    <item>#795548</item>
+    <item>#000000</item>
+    <item>#9C27B0</item>
+    <item>#E91E63</item>
+</string-array>
+<string-array name="themeColorsPrimaryDark">
+    <item>#2A5779</item>
+    <item>#D32F2F</item>
+    <item>#F57C00</item>
+    <item>#FBC02D</item>
+    <item>#1976D2</item>
+    <item>#388E3C</item>
+    <item>#5D4037</item>
+    <item>#000000</item>
+    <item>#7B1FA2</item>
+    <item>#C2185B</item>
+</string-array>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/colorPrimaryDark">
+	<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="2dp">
+    <ImageView 
+        android:id="@+id/toolbar_image"
+        android:src="@drawable/ic_filmstrip_logo"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:scaleType="fitCenter" />
+   </android.support.v7.widget.Toolbar>
+	<WebView 
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    android:id="@+id/filmstrip_loginwebview"/>
+		
+	
+					
+</LinearLayout>

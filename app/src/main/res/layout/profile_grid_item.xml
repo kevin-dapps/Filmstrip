@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp">
+<ImageView 
+    android:id="@+id/profile_gridImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:adjustViewBounds="true" >
+</ImageView>
+    <View
+        android:id="@+id/profile_selector"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:clickable="true" />
+</FrameLayout>

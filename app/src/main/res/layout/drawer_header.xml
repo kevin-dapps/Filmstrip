@@ -1,0 +1,81 @@
+       <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/chosen_account_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navdrawer_chosen_account_height"
+            android:foreground="?selectableItemBackground">
+
+            
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:tint="@color/session_photo_scrim"
+                android:id="@+id/drawer_header_image" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chosen_account_content_view">
+				<RelativeLayout 
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:paddingLeft="@dimen/keyline_1"
+                	android:paddingRight="@dimen/keyline_1"
+                	android:paddingTop="@dimen/navdrawer_profile_image_marginTop">
+                <ImageView
+                    android:id="@+id/drawer_profile_image"
+                    android:layout_width="@dimen/navdrawer_profile_image_size"
+                    android:layout_height="@dimen/navdrawer_profile_image_size"
+                    android:src="@drawable/person_image_empty"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/expand_account_box_indicator"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="center" />
+                </RelativeLayout>
+	<LinearLayout 
+	    			android:id="@+id/account_switcher"
+	    			android:clickable="true"
+	    			android:orientation="vertical"
+	    			android:background="?attr/selectableItemBackground"
+	    			android:paddingTop="@dimen/keyline_1_minus_8dp"
+	    			android:paddingBottom="@dimen/keyline_1_minus_8dp"
+	    			android:paddingLeft="@dimen/keyline_1"
+	    			android:paddingRight="@dimen/keyline_1"
+	    			android:layout_marginBottom="@dimen/keyline_1"
+	    			android:layout_width="match_parent"
+	    			android:layout_height="@dimen/navdrawer_acount_box"
+                    android:layout_alignParentBottom="true">
+                <TextView
+                    android:id="@+id/drawer_header_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/white"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+                <TextView
+                    android:id="@+id/drawer_header_uname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/transparent_white"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+
+	</LinearLayout>
+            </RelativeLayout>
+
+        </FrameLayout>

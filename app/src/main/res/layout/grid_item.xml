@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="8dp"
+    android:elevation="@dimen/cardElevation"
+    card_view:cardBackgroundColor="@android:color/white"
+    card_view:cardCornerRadius="@dimen/cardRadius">
+    <LinearLayout
+        	android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/post_top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_small">
+
+            <ImageView
+                android:id="@+id/post_profile"
+                android:layout_width="@dimen/cardProfilePhoto"
+                android:layout_height="@dimen/cardProfilePhoto"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_account_circle" />
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:padding="8dp"
+			    android:orientation="vertical">
+                <TextView
+                    android:id="@+id/post_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="chickenislyfe_"
+                    android:ellipsize="end"
+                    android:background="?attr/selectableItemBackground"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:singleLine="true"
+        			android:includeFontPadding="false"/>
+
+                <TextView
+                    android:id="@+id/post_timestamp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+        			android:includeFontPadding="false"
+                    android:text="13 minutes ago"
+        			android:textColor="@color/transparent_gray"
+        			android:textStyle="italic"/>
+
+			</LinearLayout>
+        </LinearLayout>
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/post_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.kd.filmstrip.customviews.SquaredFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageButton 
+            android:id="@+id/is_video"
+            android:visibility="gone"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_post_video"/>
+            <ImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+            <View
+                android:id="@+id/vBgLike"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_like_circle_background" />
+
+            <ImageView
+                android:id="@+id/ivLike"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/ic_heart_outline_white" />
+        </com.kd.filmstrip.customviews.SquaredFrameLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/post_caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:layout_below="@+id/post_content"
+            android:autoLink="all"
+			android:textColorLink="@color/colorPrimary"
+			android:padding="@dimen/spacing_small"
+			android:textIsSelectable="true"
+            style="@style/Base.TextAppearance.AppCompat.Body1" />
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:paddingLeft="@dimen/spacing_small"
+          android:paddingRight="@dimen/spacing_small">
+       <ImageButton 
+            android:id="@+id/likeButton"
+            android:padding="@dimen/spacing_xsmall"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_like"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+       <TextView 
+           android:id="@+id/likeCounts"
+           android:textColor="@color/colorPrimaryDark"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:singleLine="true"
+           android:includeFontPadding="false"
+           android:text="50 likes"/>
+        <ImageButton
+            android:id="@+id/commentButton"
+            android:padding="@dimen/spacing_xsmall"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_comment"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_width="48dp"
+            android:layout_height="48dp"/>
+       <TextView 
+           android:id="@+id/commentCounts"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:singleLine="true"
+           android:includeFontPadding="false"
+           android:text="50 comments"/>
+       <ImageButton
+            android:id="@+id/shareButton"
+            android:gravity="end"
+            android:padding="@dimen/spacing_xsmall"
+            android:background="?selectableItemBackgroundBorderless"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+           android:src="@drawable/ic_share" />
+        </RelativeLayout>
+</LinearLayout>
+</LinearLayout>
+</android.support.v7.widget.CardView>

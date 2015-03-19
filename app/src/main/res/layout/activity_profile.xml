@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kd.filmstrip.customviews.ScrimInsetsFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:insetForeground="#01000000">
+    <RelativeLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+  		android:clipToPadding="false" 
+        >
+        <include
+            layout="@layout/toolbar_detail"/>
+           
+
+    <LinearLayout
+        android:id="@+id/profile_layout"
+        android:visibility="invisible"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0" 
+        android:descendantFocusability="blocksDescendants">
+
+        <LinearLayout
+            android:id="@+id/profile_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorNeutral" >
+<RelativeLayout
+    android:layout_height="match_parent" 
+    android:layout_width="match_parent">
+       <android.support.v4.widget.SwipeRefreshLayout
+    		android:id="@+id/profile_refresh"
+   			android:layout_width="match_parent"
+    		android:layout_height="match_parent">
+       <android.support.v7.widget.RecyclerView
+    		android:id="@+id/profileImages"
+    		android:background="?android:colorBackground"
+	    	android:elevation="1dp"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent" />
+       </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout></com.kd.filmstrip.customviews.ScrimInsetsFrameLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:gravity="bottom"
+    android:weightSum="1.0">
+
+    <EditText
+        android:id="@+id/comment_text"
+        android:layout_width="0dip"
+        android:layout_weight=".8"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:hint="Enter your comment" />
+
+    <Button
+        android:id="@+id/comment_post"
+        android:layout_weight=".2"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/comment_text"
+        android:text="Post" />
+    
+</LinearLayout>

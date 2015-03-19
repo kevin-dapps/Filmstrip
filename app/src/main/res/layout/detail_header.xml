@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+<RelativeLayout 
+    android:id="@+id/under_postcontent"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <RelativeLayout 
+    android:id="@+id/detail_userinfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/detail_user_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingRight="16dp"
+        android:layout_below="@+id/post_image"/>
+    <TextView 
+        android:id="@+id/detail_username"
+        android:layout_toRightOf="@+id/detail_user_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorNeutral"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <TextView 
+        android:id="@+id/detail_likecount"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorNeutral"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/detail_caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:textColor="@color/colorNeutral"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/detail_userinfo"/>
+    </RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/detail_location_container"
+    android:layout_below="@+id/under_postcontent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    android:background="#02bbd4"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="@dimen/spacing_large"
+    android:paddingLeft="@dimen/spacing_large">
+    <ImageView 
+        android:id="@+id/detail_location_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingRight="@dimen/spacing_large"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_action_location_city" />
+    <TextView
+        android:id="@+id/detail_location_name"
+        android:layout_toRightOf="@+id/detail_location_icon"
+        android:text="No Location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>
+</RelativeLayout>

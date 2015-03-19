@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:focusable="true" 
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout 
+    android:orientation="horizontal"
+    android:gravity="start|center_vertical"
+    android:paddingLeft="@dimen/keyline_1_minus_8dp"
+    android:paddingRight="@dimen/keyline_1"
+    android:paddingTop="@dimen/padding_10"
+    android:paddingBottom="@dimen/padding_10"
+    android:layout_width="match_parent"
+    android:minHeight="?android:listPreferredItemHeightSmall"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/drawer_item_icon"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="@dimen/keyline_1" />
+
+    <TextView
+        android:id="@+id/drawer_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:gravity="start|center_vertical"
+        android:fontFamily="@string/font_fontFamily_medium"
+        android:textStyle="@integer/font_textStyle_medium"
+        android:textSize="14sp" />
+</LinearLayout>
+
+<View android:visibility="gone" android:layout_gravity="bottom" android:id="@+id/drawer_divider" android:background="@color/colorGray" android:layout_width="match_parent" android:layout_height="2.0px" />	    
+</LinearLayout>

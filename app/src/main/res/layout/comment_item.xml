@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <ImageView
+        android:id="@+id/commentPhoto"
+        android:background="@drawable/circle_white"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:padding="2dp"
+        android:transitionName="robot"
+        android:layout_marginLeft="@dimen/keyline_1"
+        android:layout_marginTop="@dimen/keyline_1"/>
+	<RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="72dip">
+    <TextView
+        android:id="@+id/commentUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/keyline_1"
+        android:layout_marginRight="56dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.Title"/>
+   <TextView
+        android:id="@+id/commentText"
+        android:autoLink="all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/commentUsername"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="@dimen/keyline_1"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:includeFontPadding="false" />
+   </RelativeLayout>
+
+</RelativeLayout>

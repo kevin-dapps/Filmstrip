@@ -1,0 +1,99 @@
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/chosen_account_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/navdrawer_chosen_account_height"
+            android:foreground="?photoItemForeground">
+ 
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:tint="@color/session_photo_scrim"
+                android:id="@+id/drawer_header_image" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/keyline_1"
+                android:paddingRight="@dimen/keyline_1"
+                android:paddingTop="@dimen/keyline_1"
+                android:id="@+id/chosen_account_content_view">
+
+                <ImageView
+                    android:id="@+id/drawer_profile_image"
+                    android:layout_width="@dimen/navdrawer_profile_image_size"
+                    android:layout_height="@dimen/navdrawer_profile_image_size"
+                    android:src="@drawable/person_image_empty"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/expand_account_box_indicator"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/drawer_header_uname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/drawer_profile_image"
+                    android:layout_toLeftOf="@id/expand_account_box_indicator"
+                    android:layout_alignParentBottom="true"
+                    android:paddingBottom="16dp"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textColor="@color/body_text_2_inverse"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/drawer_header_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/drawer_header_uname"
+                    android:layout_alignLeft="@id/drawer_profile_image"
+                    android:layout_toLeftOf="@id/expand_account_box_indicator"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/body_text_1_inverse"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Account items -->
+            <LinearLayout
+                android:id="@+id/account_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="invisible" />
+
+            <!-- Drawer items -->
+            <LinearLayout
+                android:id="@+id/navdrawer_items_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical" />
+        </FrameLayout>
+    </LinearLayout>

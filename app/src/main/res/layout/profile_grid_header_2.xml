@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    		xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+            android:id="@+id/profile_info"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1.0"
+            android:background="@color/colorPrimary"
+            android:padding="16dp">
+        	<LinearLayout
+            	android:id="@+id/profile_top"
+            	android:layout_width="match_parent"
+           		android:layout_height="0dip"
+            	android:layout_weight=".5"
+            	android:weightSum="1.0">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:transitionName="robot"
+                android:src="@drawable/photo" />
+					<RelativeLayout 
+					    android:id="@+id/profile_controls"
+			    		android:layout_width="0dip" 
+			    		android:layout_height="match_parent"
+			    		android:layout_weight="0.7"
+			    		android:paddingLeft="10dp"
+			    		android:paddingRight="10dp">
+            			<TextView
+                			android:id="@+id/profile_name"
+                			android:singleLine="true"
+                			android:maxLines="1"
+                			android:ellipsize="marquee"
+                			android:layout_width="match_parent"
+                			android:layout_height="wrap_content"
+                			android:textColor="@android:color/white"
+                			android:textAppearance="?android:attr/textAppearanceMedium" />
+           				<TextView
+                			android:id="@+id/profile_uname"
+                			android:singleLine="true"
+                			android:maxLines="1"
+                			android:ellipsize="marquee"
+                			android:layout_width="match_parent"
+                			android:layout_height="wrap_content"
+                			android:layout_below="@+id/profile_name"
+                			android:textColor="@android:color/white"
+                			android:layout_marginBottom="10dp"
+                			android:textAppearance="?android:attr/textAppearanceSmall" />
+           				<Button
+           				    android:id="@+id/profile_btn"
+           				    android:layout_width="match_parent"
+           				    android:layout_height="wrap_content"
+           				    android:layout_below="@+id/profile_uname"
+           				    android:layout_marginTop="5dp"
+           				    android:background="@drawable/drawer_ripple"
+           				    android:text="@string/follow_user"
+           				    android:textColor="@color/colorPrimary"
+           				    android:textAppearance="?android:attr/textAppearanceSmall" />
+           			</RelativeLayout>
+			</LinearLayout>
+<TableLayout
+    android:id="@+id/profile_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight=".5"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+ 
+    <!-- 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="15dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip">
+           				
+        <!--  Post Container -->
+        <RelativeLayout 
+            android:id="@+id/post_container"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground">		
+        <TextView
+            android:id="@+id/post_count"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/count_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorNeutral" />
+       <TextView
+            android:id="@+id/txt_posts"
+            android:text="@string/posts"
+            android:gravity="center"
+            android:layout_below="@+id/post_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorNeutral" />
+        </RelativeLayout>
+        <!--  Follower Container -->
+        <RelativeLayout 
+            android:id="@+id/follower_container"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground">
+        <TextView
+            android:id="@+id/follower_count"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/count_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorNeutral" />
+       <TextView
+            android:id="@+id/txt_followers"
+            android:text="@string/followers"
+            android:layout_below="@+id/follower_count"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorNeutral" />
+       </RelativeLayout>
+       <!--  Following Container  -->
+       
+       <RelativeLayout 
+            android:id="@+id/following_container"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:gravity="center"
+            android:clickable="true" 
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+        <TextView
+            android:id="@+id/following_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/count_unknown"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorNeutral" />
+         <TextView
+            android:id="@+id/txt_following"
+            android:text="@string/following"
+            android:gravity="center"
+            android:layout_below="@+id/following_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorNeutral" />
+         </RelativeLayout>
+    </TableRow>
+</TableLayout>
+</LinearLayout>
+
+<LinearLayout 
+    android:id="@+id/profile_tabs"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/profile_info"
+    android:weightSum="1"
+    android:background="@color/colorGray">
+    <ImageButton 
+        android:id="@+id/switchGrid"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_popular"
+        android:padding="@dimen/spacing_small"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"/>
+    <ImageButton 
+        android:id="@+id/switchList"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/ic_feed"
+        android:padding="@dimen/spacing_small"
+        android:layout_width="0dp"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"/>
+    
+</LinearLayout>
+</RelativeLayout>

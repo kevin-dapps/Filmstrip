@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:instamaker="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileActivity" >
+    <item 
+        android:id="@+id/block_user"
+        android:title="@string/block_user"
+        android:orderInCategory="98"
+        instamaker:showAsAction="never" />
+    
+</menu>

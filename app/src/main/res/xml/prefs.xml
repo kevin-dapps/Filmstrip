@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+
+     
+    <PreferenceCategory android:title="Customization Settings" >
+		<ListPreference 
+   			android:key="theme_color"
+    		android:title="Theme"
+    		android:defaultValue="0"
+    		android:entries="@array/themeColors"
+    		android:entryValues="@array/themeColorsValues"/>
+<!--		<ListPreference
+   			android:key="caption_position"
+    		android:title="Caption Position"
+    		android:defaultValue="below"
+    		android:entries="@array/captionPosition"
+    		android:entryValues="@array/captionPositionValues"/>
+		<ListPreference 
+   			android:key="time_style"
+    		android:title="Time Style"
+    		android:entries="@array/timeStyle"
+    		android:entryValues="@array/timeStyleValues"/>
+		<ListPreference 
+   			android:key="liked_photos_view"
+    		android:title="Liked Photos View"
+    		android:entries="@array/lPStyle"
+    		android:entryValues="@array/lPStyleValues"/>
+    		-->
+		<SwitchPreference
+		    android:key="post_layout"
+		    android:title="Enable New Layout"
+		    android:summary="Try out the newest post layout."
+		    android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

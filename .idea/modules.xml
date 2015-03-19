@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Filmstrip.iml" filepath="$PROJECT_DIR$/Filmstrip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/android-instagram-oauth/android-instagram-oauth.iml" filepath="$PROJECT_DIR$/libraries/android-instagram-oauth/android-instagram-oauth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+    </modules>
+  </component>
+</project>
+
