@@ -1,5 +1,7 @@
 # Filmstrip
-An Android Material-Based Client for Instagram.
+An Open-Source  Material-Based Client for Instagram on Android.
+
+BEFORE YOU CONTINUE, READ THE NOTICE.txt
 
 Copyright 2015 Kevin Daniel
 
