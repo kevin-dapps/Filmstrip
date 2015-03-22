@@ -1,0 +1,18 @@
+NOTICE: IF YOU CREATE A FORK OF THIS PROJECT YOU MUST LINK BACK TO THE OFFICIAL COMMUNITY AND/OR DEVELOPER. 
+
+YOU MUST:
+
+1. COPY THE FOLLOWING TEXT AND PASTE IT IN YOUR APP DESCRIPTION AND/OR Community Description. Must be visible to those whom download the forked version.
+
+[Forked Project Name] is based on the open-source project Filmstrip by Kevin Daniel.
+
+
+
+2. INCLUDE AT LEAST TWO OF THE FOLLOWING LINKS IN YOUR APP/PROJECT DESCRIPTION.
+
+Original Developer: https://plus.google.com/u/1/+KevinDaniel/
+Original G+ Community: https://plus.google.com/u/1/communities/112112730108955353967
+Original Repository: https://github.com/kevin-dapps/Filmstrip/
+Original Download: https://play.google.com/store/apps/details?id=com.kd.filmstrip
+
+FAILURE TO DO SO WILL VIOLATE THE APACHE LICENSE 2.0
